@@ -1,10 +1,15 @@
 document
   .getElementById("login-btn")
   .addEventListener("click", function (event) {
+    event.preventDefault();
     const phoneBtn = document.getElementById("input-phone-btn");
     const phoneNumber = phoneBtn.value;
-    if (phoneNumber === "017") {
-      console.log("Your Phone no is verified");
+    const pinBtn = document.getElementById("input-pin-btn");
+    const pinNumber = pinBtn.value;
+    if (phoneNumber === "017" && pinNumber === "bangla") {
+      console.log(alert(phoneNumber + " | " + pinNumber));
+      console.log("You are verified");
+      window.location.href = "home.html";
     } else {
       console.log("Not added");
     }
