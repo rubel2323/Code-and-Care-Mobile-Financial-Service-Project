@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code and Care Mobile Financial Service</title>
+
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Daisy JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <!-- Mobile View -->
+    <div class="flex justify-center">
+      <div class="mockup-phone border-[#ff8938] h-[600px] w-[350px]">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display">
+          <div
+            class="hero bg-[url(https://img.daisyui.com/images/stock/453966.webp)] min-h-screen"
+          >
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="label">Phone No:</label>
+                    <input
+                      type="number"
+                      class="input"
+                      id="input-phone-btn"
+                      placeholder="phone"
+                    />
+                    <label class="label">PIN</label>
+                    <input
+                      type="pin"
+                      class="input"
+                      class="input-pin-btn"
+                      placeholder="Type Your Pin here..."
+                    />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button class="btn btn-neutral mt-4" id="login-btn">
+                      Login
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="javascript.js"></script>
+  </body>
+</html>
