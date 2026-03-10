@@ -1,16 +1,20 @@
-document
-  .getElementById("login-btn")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    const phoneBtn = document.getElementById("input-phone-btn");
-    const phoneNumber = phoneBtn.value;
-    const pinBtn = document.getElementById("input-pin-btn");
-    const pinNumber = pinBtn.value;
-    if (phoneNumber === "017" && pinNumber === "bangla") {
-      console.log(alert(phoneNumber + " | " + pinNumber));
-      console.log("You are verified");
-      window.location.href = "home.html";
+const addMoneyConfirm = document
+  .getElementById("add-money-btn")
+  .addEventListener("click", function () {
+    const inputMoneyBtn = document.getElementById("input-money-btn").value;
+
+    const inputPinBtn = document.getElementById("input-pin-btn").value;
+    const balance = document.getElementById("account-balance").innerText;
+    let primaryBalance = parseFloat(balance);
+    let secondaryUserMoney = parseFloat(inputMoneyBtn);
+    const totalBalance = primaryBalance + secondaryUserMoney;
+
+    if (inputPinBtn === "codeandcare") {
+      document.getElementById("account-balance").innerText = totalBalance;
+      document.getElementById("input-money-btn").value = "";
+      document.getElementById("input-pin-btn").value = "";
+      console.log(totalBalance);
     } else {
-      console.log("Not added");
+      alert("Your pin is wrong");
     }
   });

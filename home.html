@@ -1,1 +1,99 @@
-<h1>This is your html</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <!-- Daisy UI css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Daisy JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="main">
+      <!-- Mobile View -->
+      <div class="flex justify-center">
+        <div class="mockup-phone border-[#ff8938] h-[600px] w-[350px]">
+          <div class="mockup-phone-camera"></div>
+          <div class="mockup-phone-display">
+            <div
+              class="hero bg-[url(https://img.daisyui.com/images/stock/453966.webp)] min-h-screen"
+            >
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <div class="card-body">
+                    <fieldset class="fieldset">
+                      <!-- Stat is used to show numbers and data in a block. -->
+                      <!-- stat adding -->
+
+                      <div class="stats shadow">
+                        <div class="stat flex justify-center">
+                          <div class="stat-value" id="account-balance">
+                            89400
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- divider rule -->
+
+                      <div class="flex w-full flex-col">
+                        <div class="divider divider-info"></div>
+                      </div>
+
+                      <!-- button added -->
+                      <div>
+                        <button
+                          type="button"
+                          class="btn btn-info"
+                          id="user-money-btn"
+                        >
+                          Add Money
+                        </button>
+                        <button type="submit" class="btn btn-success">
+                          Cash Out
+                        </button>
+                      </div>
+
+                      <!-- form added -->
+                      <label class="label">Add Money:</label>
+                      <input
+                        type="number"
+                        class="input"
+                        id="input-money-btn"
+                        placeholder="Add money"
+                      />
+                      <label class="label">PIN</label>
+                      <input
+                        type="password"
+                        class="input"
+                        id="input-pin-btn"
+                        placeholder="Type Your Pin here..."
+                      />
+
+                      <button
+                        type="submit"
+                        class="btn btn-secondary mt-4"
+                        id="add-money-btn"
+                      >
+                        Add Money
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="javascript.js"></script>
+  </body>
+</html>
