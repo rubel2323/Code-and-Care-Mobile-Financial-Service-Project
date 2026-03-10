@@ -9,6 +9,6 @@ document.getElementById("login-btn").addEventListener("click", function () {
     console.log("You are verified");
     window.location.href = "home.html";
   } else {
-    console.log("Not added");
+    alert("You entered wrong information");
   }
 });

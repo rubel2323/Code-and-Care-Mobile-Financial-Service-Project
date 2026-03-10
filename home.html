@@ -49,42 +49,82 @@
                       </div>
 
                       <!-- button added -->
-                      <div>
+                      <div class="flex justify-center gap-0.5">
                         <button
                           type="button"
                           class="btn btn-info"
-                          id="user-money-btn"
+                          id="user-money-add-btn"
                         >
                           Add Money
                         </button>
-                        <button type="submit" class="btn btn-success">
+                        <button
+                          type="submit"
+                          class="btn btn-success"
+                          id="cash-out-successful"
+                        >
                           Cash Out
                         </button>
                       </div>
 
-                      <!-- form added -->
-                      <label class="label">Add Money:</label>
-                      <input
-                        type="number"
-                        class="input"
-                        id="input-money-btn"
-                        placeholder="Add money"
-                      />
-                      <label class="label">PIN</label>
-                      <input
-                        type="password"
-                        class="input"
-                        id="input-pin-btn"
-                        placeholder="Type Your Pin here..."
-                      />
+                      <!-- divider rule -->
 
-                      <button
-                        type="submit"
-                        class="btn btn-secondary mt-4"
-                        id="add-money-btn"
-                      >
-                        Add Money
-                      </button>
+                      <div class="flex w-full flex-col">
+                        <div class="divider divider-info"></div>
+                      </div>
+
+                      <!-- form added -->
+                      <div class="hidden" id="add-money-up-btn">
+                        <label class="label">Add Money:</label>
+                        <input
+                          type="number"
+                          class="input"
+                          id="input-money-btn"
+                          placeholder="Add money"
+                        />
+                        <label class="label">PIN</label>
+                        <input
+                          type="password"
+                          class="input"
+                          id="input-pin-btn"
+                          placeholder="Type Your Pin here..."
+                        />
+
+                        <button
+                          type="submit"
+                          class="btn btn-secondary mt-4"
+                          id="add-money-btn"
+                        >
+                          Add Money
+                        </button>
+                      </div>
+
+                      <!-- Cash out Option starts -->
+
+                      <div id="cash-out-form" class="hidden">
+                        <label class="label">Cahout Money</label>
+                        <input
+                          type="number"
+                          class="input"
+                          id="cash-out-money"
+                          placeholder="Cash out money"
+                        />
+                        <label class="label">PIN</label>
+                        <input
+                          type="password"
+                          class="input"
+                          id="cash-out-pin"
+                          placeholder="Type Your Pin here..."
+                        />
+
+                        <button
+                          type="submit"
+                          class="btn btn-secondary mt-4"
+                          id="cash-out-btn"
+                        >
+                          Cash Out
+                        </button>
+                      </div>
+                      <!-- cash out option ends -->
                     </fieldset>
                   </div>
                 </div>
@@ -95,5 +135,7 @@
       </div>
     </section>
     <script src="javascript.js"></script>
+    <script src="cashout.js"></script>
+    <script src="cashWithdraw.js"></script>
   </body>
 </html>
