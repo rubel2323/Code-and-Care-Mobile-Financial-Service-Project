@@ -3,7 +3,7 @@ document
   .addEventListener("click", function () {
     const cashForm = document.getElementById("cash-out-form");
     cashForm.classList.remove("hidden");
-    const addMoneyForm = document.getElementById("user-money-add-btn");
+    const addMoneyForm = document.getElementById("add-money-up-btn");
     addMoneyForm.classList.add("hidden");
   });
 
