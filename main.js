@@ -7,7 +7,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
   if (phoneNumber === "017" && pinNumber === "codeandcare") {
     console.log(alert(phoneNumber + " | " + pinNumber));
     console.log("You are verified");
-    window.location.href = "home.html";
+    window.location.href = "./home.html";
   } else {
     alert("You entered wrong information");
   }
